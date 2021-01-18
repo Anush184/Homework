@@ -17,8 +17,9 @@ def make_delete_dirs():
                 os.chdir("..")
                 os.rmdir(item)
             else:
-                os.chdir(".")
-                os.rmdir(item)
+                if item.isdir():
+                    os.chdir(".")
+                    os.rmdir(item)
         print(os.getcwd())
 
 
