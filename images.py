@@ -1,3 +1,4 @@
+#Download pictures
 import json
 import requests
 import os
